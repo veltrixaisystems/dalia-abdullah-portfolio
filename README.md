@@ -1,50 +1,16 @@
-# Dalia Abdullah — AI Engineer Portfolio
+# Dalia Abdullah Portfolio — Robotics / Research Update
 
-A dependency-free, responsive portfolio website built as a premium single-page experience.
+Drop-in replacement files for the current portfolio.
 
-## Preview locally
+## What changed
+- Repositioned hero toward AI + robotics + autonomous systems.
+- Added **ORBIT-01**, clearly labeled **Blueprint · In Development** so the portfolio does not claim unfinished work as completed.
+- Added a research direction section connecting reliable AI systems to reliable autonomy.
+- Added interactive robotics blueprints: autonomy stack, experiment plan, and build roadmap.
+- Updated capabilities and About copy to support a graduate-school / robotics narrative.
 
-Open `index.html` directly, or run:
+## Before deploying
+Keep your existing `public/`, `favicon.svg`, résumé, and any other repo assets. Replace only `index.html`, `styles.css`, and `app.js` with these files.
 
-```bash
-python -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
-
-## Deploy
-
-This site can be deployed as-is to Vercel, Netlify, GitHub Pages, Cloudflare Pages, or any static hosting provider.
-
-### Vercel
-- Create a new project from this folder/repository.
-- Framework preset: **Other**.
-- Build command: leave blank.
-- Output directory: `.`
-
-### GitHub Pages
-- Push the folder to a repository.
-- Enable Pages from the repository root.
-
-## Important links already wired
-
-- LinkedIn: `https://www.linkedin.com/in/daliaabdullah-ai/`
-- Email: `dalia@veltrixaisystems.site`
-- Resume: `public/Dalia_Abdullah_Resume.pdf`
-
-## Content areas
-
-- Hero / positioning
-- Impact metrics
-- Nurova flagship case study
-- PredEDU
-- Veltrix AI Systems
-- AI system architecture philosophy
-- OFFTEC experience
-- Capabilities
-- Education / languages
-- Contact
-
-## Editing
-
-Most content is in `index.html`. Visual styling lives in `styles.css`, and lightweight interactions live in `app.js`.
+## When ORBIT-01 is actually built
+Replace the `BLUEPRINT · IN DEVELOPMENT` status with a truthful build status, add the GitHub/demo links, and update planned metrics with measured results. Do not present planned results as completed experiments.

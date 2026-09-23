@@ -27,3 +27,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// Robotics blueprint workbench.
+const blueprintTabs = [...document.querySelectorAll('.blueprint-tab')];
+const blueprintPanels = [...document.querySelectorAll('.blueprint-panel')];
+
+blueprintTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.blueprint;
+
+    blueprintTabs.forEach((item) => {
+      const selected = item === tab;
+      item.classList.toggle('active', selected);
+      item.setAttribute('aria-selected', String(selected));
+    });
+
+    blueprintPanels.forEach((panel) => {
+      const selected = panel.dataset.panel === target;
+      panel.classList.toggle('active', selected);
+      panel.hidden = !selected;
+    });
+  });
+});
